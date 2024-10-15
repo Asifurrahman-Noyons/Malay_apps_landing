@@ -48,7 +48,7 @@
     </nav>
 
     <!-- Header banner -->
-    <header class="bg-gray-900 bg-opacity-90 flex flex-col lg:flex-row items-center py-4 px-11">
+    <header class="bg-gray-800 flex flex-col lg:flex-row items-center py-4 px-11">
         <div class="text-center lg:text-left lg:max-w-lg lg:pr-6">
             <h1 class="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent animate-heading">
                 Master the Malay Language
@@ -57,11 +57,11 @@
                 Learn Malay and check your visa status with ease!
             </p>
             <button class="mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-                Get Started
+                Download Now
             </button>
         </div>
         <div class="mt-8 lg:mt-0 lg:ml-auto">
-            <img src="https://via.placeholder.com/400x300" alt="App Screenshot" class="max-w-full sm:max-w-xs md:max-w-sm animate-image" />
+            <img src="image/home.png" alt="App Screenshot" class="max-w-full sm:max-w-xs md:max-w-sm animate-image" />
         </div>
     </header>
 
@@ -94,7 +94,7 @@
             
             <div class="flex flex-col md:flex-row justify-center items-center mt-6">
                 <div class="md:w-1/2 mb-4 md:mb-0">
-                    <img src="https://via.placeholder.com/400x300" alt="App Screenshot" class="rounded-lg shadow-md">
+                    <img src="image/logo.jpg" alt="App Screenshot" class="rounded-lg shadow-md">
                 </div>
                 <div class="md:w-1/2 md:pl-6">
                     <p class="text-lg">Experience the convenience of learning Malay and checking your visa status all in one place. Our app is designed for easy navigation and effective learning.</p>
@@ -108,6 +108,36 @@
             <p class="mt-2">We are dedicated to helping users learn the Malay language and navigate visa requirements easily. Our app provides a comprehensive platform for language learning and information on visa status.</p>
         </section>
 
+        <section id="contact" class="mt-8">
+            <h2 class="text-2xl font-semibold">Contact Us</h2>
+            <p class="mt-2">Have questions or feedback? Reach out to us!</p>
+            <form class="mt-4">
+                <div class="flex flex-col">
+                    <input type="text" placeholder="Your Name" class="mb-2 p-2 rounded bg-gray-800" required>
+                    <input type="email" placeholder="Your Email" class="mb-2 p-2 rounded bg-gray-800" required>
+                    <textarea placeholder="Your Message" class="mb-2 p-2 rounded bg-gray-800" rows="4" required></textarea>
+                    <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition">Send Message</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-center p-4">
+        <div class="container mx-auto">
+            
+             <p>&copy; 2024 ENOY SOFT. All rights reserved.</p>
+        </div>
+        
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
         <section id="contact" class="mt-8">
             <h2 class="text-2xl font-semibold">Contact Us</h2>
             <p class="mt-2">Have questions or feedback? Reach out to us!</p>
