@@ -22,11 +22,19 @@
         .animate-heading {
             animation: fadeIn 1s ease forwards;
         }
+        /* Fixed navbar styles */
+        .fixed-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-white">
 
-    <nav class="bg-gray-800 p-4">
+    <nav class="bg-gray-800 p-4 shadow-md fixed-nav">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-xl font-bold">Malaysia Visa & Learn Malay</h1>
             <div class="hidden md:flex space-x-4">
@@ -36,7 +44,9 @@
                 <a href="#contact" class="text-gray-300 hover:text-white">Contact</a>
             </div>
             <button id="menu-toggle" class="md:hidden focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
             </button>
         </div>
         <div id="menu" class="md:hidden hidden">
@@ -48,7 +58,7 @@
     </nav>
 
     <!-- Header banner -->
-    <header class="bg-gray-800 flex flex-col lg:flex-row items-center py-4 px-11">
+    <header class="bg-gray-800 flex flex-col lg:flex-row items-center py-4 px-11 mt-14"> <!-- Added margin-top -->
         <div class="text-center lg:text-left lg:max-w-lg lg:pr-6">
             <h1 class="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent animate-heading">
                 Master the Malay Language
@@ -56,9 +66,9 @@
             <p class="py-4 text-2xl sm:text-3xl font-bold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent animate-heading">
                 Learn Malay and check your visa status with ease!
             </p>
-            <button class="mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            <a href="https://play.google.com/store/apps/details?id=com.enoy.learnmalay" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
                 Download Now
-            </button>
+            </a>
         </div>
         <div class="mt-8 lg:mt-0 lg:ml-auto">
             <img src="home.png" alt="App Screenshot" class="max-w-full sm:max-w-xs md:max-w-sm animate-image" />
@@ -98,7 +108,7 @@
                 </div>
                 <div class="md:w-1/2 md:pl-6">
                     <p class="text-lg">Experience the convenience of learning Malay and checking your visa status all in one place. Our app is designed for easy navigation and effective learning.</p>
-                    <a href="#" class="mt-4 inline-block bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition">Get it on Google Play</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.enoy.learnmalay" class="mt-4 inline-block bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition">Get it on Google Play</a>
                 </div>
             </div>
         </section>
@@ -111,7 +121,7 @@
         <section id="contact" class="mt-8">
             <h2 class="text-2xl font-semibold">Contact Us</h2>
             <p class="mt-2">Have questions or feedback? Reach out to us!</p>
-            <form class="mt-4">
+            <form class="mt-4" action="mailto:enoysoft@example.com" method="POST" enctype="text/plain">
                 <div class="flex flex-col">
                     <input type="text" placeholder="Your Name" class="mb-2 p-2 rounded bg-gray-800" required>
                     <input type="email" placeholder="Your Email" class="mb-2 p-2 rounded bg-gray-800" required>
@@ -124,10 +134,8 @@
 
     <footer class="bg-gray-800 text-center p-4">
         <div class="container mx-auto">
-            
              <p>&copy; 2024 ENOY SOFT. All rights reserved.</p>
         </div>
-        
     </footer>
 
     <script>
